@@ -1,0 +1,18 @@
+services:
+  scopeforge:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - scopeforge-data:/app/data
+    restart: unless-stopped
+    init: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+volumes:
+  scopeforge-data:
