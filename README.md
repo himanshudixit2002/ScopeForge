@@ -19,6 +19,8 @@ Open [ScopeForge](http://127.0.0.1:8000). The server binds to loopback. Stop it 
 
 Choose **Explore demo** to exercise the scan-to-report workflow with synthetic response fixtures. The demo does not connect to a target. All demo findings are labelled synthetic.
 
+For configuration, development mode, tests, containers and troubleshooting, see the [full run guide](docs/RUNNING.md).
+
 ## A real assessment
 
 1. Read the program's policy and confirm that automated HTTP requests are permitted.
@@ -54,6 +56,7 @@ This release is for a single trusted local user. Team identity, multi-tenant iso
 - [Implemented coverage and limitations](docs/COVERAGE.md)
 - [Architecture, trust boundaries and scaling decisions](docs/ARCHITECTURE.md)
 - [Phased delivery plan and acceptance criteria](docs/DELIVERY-PLAN.md)
+- [Setup, run and troubleshooting guide](docs/RUNNING.md)
 - [Operations, recovery and release guidance](docs/OPERATIONS.md)
 - [API contract](docs/API-CONTRACT.md)
 - [Verification results and remaining validation](docs/VERIFICATION.md)
